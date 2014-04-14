@@ -1,0 +1,430 @@
+/* CSS Document */
+
+body{padding:0px; margin:0px;padding:0; 
+background:url(images/body-back.png);color:#4a4949;
+font:14px "Trebuchet MS",Arial, Helvetica, sans-serif;
+cursor:url(images/pencil.png),pointer;}
+div, ul, h1, h2, h3, li, p, img, a{margin:0; padding:0;color:#4a4949;}
+ul{list-style-type:none;}
+
+/*-------------- wrapper ---------*/
+#wrapper_outer {
+	background:url(images/back.png) repeat-x;
+}
+#wrapper{
+	width:990px;
+	margin:0 auto;
+	position:relative;	
+	}
+/*--------------header -----------*/
+#header{
+	width:990px;
+	height:35px;
+}
+
+#welcome {
+	width:986px;
+	background:#eed6a2;
+	height:20px;
+	border:solid 1px #777676;
+	padding-top:3px;
+	margin:6px auto;
+}
+
+.clear {
+		float:none;
+		clear:both;
+		height:5px;
+	}
+	
+.heading{
+	margin-left:10px;
+	margin-bottom:20px;
+	padding:4px 3px 0px 3px;
+	height: 26px;
+	width: 760px;
+	border-bottom:solid 1px #4a4949;
+}
+
+
+/*----------------------body---------------*/
+#content{
+	width:794px;
+	margin:0px;
+	margin-top:7px;	
+}
+#right-panel {
+	float:right;
+	width:535px;
+	color:#a86f2e;
+}
+
+#login {
+	margin-right:20px;
+	padding:10px;
+	width:535px;
+	height:50px;
+	background:#fff;
+	border:solid 5px #a86f2e;
+	border-top-style:none;
+}
+
+#news {
+	margin-top:10px;
+	padding:10px;
+	border:solid 2px #a86f2e;
+	width:535px;
+	background:#fff;
+	height:350px;
+}
+
+#introduction {
+	background:#fff;
+	height:530px;
+	width:1020px;
+}
+
+#main {
+	width:794px;
+}	
+	
+.main {
+	margin:0px;
+	background:url(images/cont-strip.png) repeat-y;
+}
+	
+#menu {
+	width:176px;
+	margin:0px;
+	margin-top:7px;
+	float:right;
+	text-decoration:none;
+	}	
+
+/*------------------------footer---------------*/
+#footer{
+	height:27px;
+	padding:0px;
+	margin:0px;
+	padding-top:10px;
+	background:url(images/footer.png) repeat-x;
+	text-align:center;
+	color:#4a4949;
+	font:12px Arial, Helvetica, sans-serif;
+	}
+/*-------------------Staff Menu------------------*/
+
+#nav {
+	display:block;
+	width:176px;
+	background:url(images/menu-strip.png) repeat-y;
+}
+
+#nav ul {
+	font-size: 12px;
+	text-align: left;
+	list-style-type: none;
+}
+#nav li {
+	word-spacing: 2px;
+}
+
+#nav li a:link, #nav li a:visited {
+	display:block;
+	width:152px;
+	padding:3px 4px 2px 15px;	
+	text-decoration: none;
+	color:#4a4949;
+}
+#nav li a:hover, #nav li active, #nav li a:focus {
+	background:#a2743e;
+	color:#fff;
+}
+
+.coursetitle {
+	background:#eed6a2;
+	width:600px;
+	margin:0 auto;
+	margin-top:6px;
+	color:#4a4949;
+}
+
+.coursetitle a:link, .coursetitle a:visited {
+	display:block;
+	text-decoration:none;
+}
+.coursetitle a:hover, .coursetitle a:focus {
+	background:#a2743e;
+	color:#fff;
+}
+
+
+.absentdetails {
+	border:dotted 1px #4a4949;
+	margin:0 auto;
+	margin-top:6px;
+	width:600px;
+	display:none;
+}
+
+.odd {
+	text-align:center;
+	height:24px;
+	background:#fff;
+}
+
+.even {
+	text-align:center;
+	background:#f8e8d2;
+	height:24px;
+}
+
+.limitcrossed {
+	text-align:center;
+	height:24px;	
+	color:#e30;
+}
+
+th {
+	height:25px;
+	background:#6d4715;
+	color:#ffffff;
+	font-weight:bold;
+	text-align:center;
+}
+
+.msg {
+	width:600px;
+	margin:0 auto;
+	font-weight:bold;
+	text-align:center;
+	color:#f00;
+	border:solid 2px #f00;
+	padding:5px;
+}
+
+p {
+	height: 23px;
+	padding:5px;
+	margin-left:10px;
+}
+
+#password {
+	margin-left:10px;
+	padding:10px;
+	width:400px;
+	border:dotted 1px #4a4949;
+}
+
+.mandatory {
+	display:none;
+	color:#f00;
+}
+
+.confirmmsg {
+	width:600px;
+	margin:0 auto;
+	font-weight:bold;
+	text-align:center;
+	color:#0c9723;
+	border:solid 2px #0c9723;
+	padding:5px;
+}
+
+.login {
+	height:30px;
+	border:none;
+}
+
+.tt-head {
+	background:#a2743e;
+	color:#ffe;
+	width:6.3%;
+	border:solid 1px #4a4949;
+	text-align:center;
+}
+.tt-day {
+	width:3.3%;
+	border:solid 1px #a2743e;
+}
+.tt-cell {
+	border:solid 1px #4a4949;
+	background:#fff;
+	width:0.58%;
+	text-align:center;
+	font-size:80%;
+}
+#datepick a img{
+	border:0 none;
+	text-decoration:none;
+	}
+#staffciadetails {
+	width:720px;
+	margin-left:80px;
+}
+#staff-cia-post {
+	width:720px;
+	margin:0 auto;
+	height:352px;
+	overflow:auto;
+}
+/* Attendance - timetable */
+#staff-student-list {
+	width:500px;
+	margin-left:10px;
+	height:352px;
+	overflow:auto;
+}
+#staff-sum {
+	float:right;
+	padding-top:10px;
+	width:200px;
+	margin-right:50px;
+	border:dotted 1px #4a4949;
+}
+/* calendar icon */
+img.tcalIcon {
+	cursor: pointer;
+	margin-left: 1px;
+	vertical-align: middle;
+}
+/* calendar container element */
+div#tcal {
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	width: 158px;
+	padding: 2px 0 0 0;
+}
+/* all tables in calendar */
+div#tcal table {
+	width: 100%;
+	border: 1px solid silver;
+	border-collapse: collapse;
+	background-color: white;
+}
+/* navigation table */
+div#tcal table.ctrl {
+	border-bottom: 0;
+}
+/* navigation buttons */
+div#tcal table.ctrl td {
+	width: 15px;
+	height: 20px;
+}
+/* month year header */
+div#tcal table.ctrl th {
+	background-color: white;
+	color: black;
+	border: 0;
+}
+/* week days header */
+div#tcal th {
+	border: 1px solid silver;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 3px 0;
+	font-family: tahoma, verdana, arial;
+	font-size: 10px;
+	background-color: gray;
+	color: white;
+}
+/* date cells */
+div#tcal td {
+	border: 0;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 2px 0;
+	font-family: tahoma, verdana, arial;
+	font-size: 11px;
+	width: 22px;
+	cursor: pointer;
+}
+/* date highlight
+   in case of conflicting settings order here determines the priority from least to most important */
+div#tcal td.othermonth {
+	color: silver;
+}
+div#tcal td.weekend {
+	background-color: #ACD6F5;
+}
+div#tcal td.today {
+	border: 1px solid red;
+}
+div#tcal td.selected {
+	background-color: #FFB3BE;
+}
+/* iframe element used to suppress windowed controls in IE5/6 */
+iframe#tcalIF {
+	position: absolute;
+	visibility: hidden;
+	z-index: 98;
+	border: 0;
+}
+/* transparent shadow */
+div#tcalShade {
+	position: absolute;
+	visibility: hidden;
+	z-index: 99;
+}
+div#tcalShade table {
+	border: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+div#tcalShade table td {
+	border: 0;
+	border-collapse: collapse;
+	padding: 0;
+}
+/*----- Data Entry Relation -----*/
+#data-left-cs {
+	width:770px;
+	margin-left:10px;
+	margin-bottom:20px;
+}
+#data-right-stu {
+	width:770px;
+	margin-left:10px;
+}
+#student-select {
+	width:360px;
+	height:250px;
+	overflow:auto;
+}
+#data-stu-list {
+	margin-bottom:20px;
+}
+#studentlist {
+	width:350px;
+	height:240px;
+}
+/* Staff Timetable for attendance */
+#attendance-tt {
+	margin-left:15px;
+	width:750px;
+	border:solid 1px;
+	overflow:auto;
+
+}
+.staff-tt-head {
+	background:#6d4715;
+	padding:0px 7px 0px 7px;
+}
+.staff-tt-empty {
+	background:#fff;
+	height:50px;
+}
+.staff-tt-td {
+	background:#93d48d;
+	text-align:center;
+	border:solid 1px;
+	height:50px;
+}
+.staff-tt-td a {
+	display:block;
+	text-decoration:none;
+	background:#b0e4ff;
+	height:50px;
+	padding:0px 6px 0px 6px;
+}
