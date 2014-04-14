@@ -1,0 +1,23 @@
+<!--Author: Anurag Jain-->
+<html>
+<head>
+<title>
+SRC - Choose CourseCode
+</title>
+<script type="text/javascript">
+function getCourseCode(dest){
+	alert("hi");
+	var q=window.open("choosesection.html","choosecourse","width=250,height=500");
+}
+</script>
+</head>
+<body>
+<div id="content">
+	<input type="text" id="asdf" name="asdf" onClick="getCourseCode(this)" />
+</div>
+<div id="dummy">
+<li><a href="#" onClick="copyCourseCode(this,'asdf')">Course 4</a></li>
+	<li><a href="#" onClick="copyCourseCode(this,'asdf')">Course 5</a></li>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+SRC - Choose CourseCode
+</title>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function copyCourseCode(){
+	var tstr='';
+	var courses = document.getElementById('content').getElementsByTagName('input');
+	for(var i=0;i<courses.length;i++)
+	{
+		if(courses[i].checked==true)
+			tstr=tstr+courses[i].value+'|';
+	}
+	var dest = window.opener.document.getElementById('desti').value;
+	window.opener.document.getElementById(dest).value= tstr;
+	window.close();
+		
+}
+
+function takeData() {
+	var data=window.opener.document.getElementById('course_table').getElementsByTagName('td');
+	var dest=window.opener.document.getElementById('desti');
+	
+	for(var i=0;i<data.length;i=i+5) {
+		document.getElementById("content").innerHTML+="<li><input type='checkbox' value='"+data[i].innerHTML+'-'+data[i+3].innerHTML+'-'+data[i+4].innerHTML+"' />"+data[i].innerHTML+" - "+data[i+1].innerHTML+" - "+data[i+2].innerHTML+" - "+data[i+3].innerHTML+"</li>";
+		//alert(data[i].innerHTML+'-'+data[i+2].innerHTML+'-'+data[i+4].innerHTML);
+	}	
+}
+</script>
+</head>
+<style type="text/css">
+#content {
+	width:800px;
+	border:solid 1px;
+	padding:10px;
+	list-style-type: none;
+}
+#content li a:link, #content li a:visited {
+	display:block;
+	width:780px;
+	padding:3px 4px 2px 15px;	
+	text-decoration: none;
+	color:#4a4949;
+}
+#content li a:hover, #content li active, #content li a:focus {
+	background:#a2743e;
+	color:#fff;
+}
+</style>
+<body onLoad="takeData()">
+<div id="content">
+</div>
+<p>
+<button onclick='copyCourseCode()'>Submit</button>
+</p>
+</body>
+</html>
