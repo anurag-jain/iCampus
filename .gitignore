@@ -1,0 +1,15 @@
+*.jpg
+*.png
+*.jpeg
+*/pdfwrite/*
+*/datetimepick/*
+CALENDER/*
+html/
+calendar_eu.js
+jquery-1.2.6.min.js
+jquery.js.js
+*/calendar/*
+/images/*
+*.pdf
+*.zip
+*.txt
